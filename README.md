@@ -39,9 +39,9 @@ The goal was to check if summer flowers can be grown in the middle of a winter w
 # Results and conclusions
 
 - moisture sensor improved care over plants. The main problem was that Centaurea cyanus were using a lot of water, when humidity dropped below exact level, plants were getting stressed and lower leaves were starting to be softer
-- using graphs in grafana made it easy and straightforward
-- usage of battery power was not a good idea - moisture sensor had big drift in measurements (even ~10 percent points) which you can see below:
+- using graphs in grafana made it easy and straightforward. I just set the lower limit of humidity when leaves were starting to get softer
 ![o1.jpg](o1.jpg)
+- usage of battery power was not a good idea - moisture sensor had big drift in measurements (even ~10 percent points) which you can see below:
 ![o2.jpg](o2.jpg)
 - flowers had too few light and that's why they were so long (I used 2x professional Verticana lightning 35W LED, 2x Ikea Ledare 1800lm LED light bulbs and 3x Ikea Trådfri 800lm RGB Zigbee light bulbs)
 - I had to make gentle "sunrise" and "sunset" using zigbee dimmer on Verticana lights because Centaurea cyanus were getting heavy stress. Matthiola longipetala needed long "evening" using orange-red light from Trådfri light bulbs to smell strong like in the summer
