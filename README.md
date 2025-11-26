@@ -40,16 +40,13 @@ The goal was to check if summer flowers can be grown in the middle of a winter w
 
 - moisture sensor improved care over plants. The main problem was that Centaurea cyanus were using a lot of water, when humidity dropped below exact level, plants were getting stressed and lower leaves were starting to be softer
 - using graphs in grafana made it easy and straightforward
-
 - usage of battery power was not a good idea - moisture sensor had big drift in measurements (even ~10 percent points) which you can see below:
-
-OBRAZEK
-
+![o1.jpg](o1.jpg)
+![o2.jpg](o2.jpg)
 - flowers had too few light and that's why they were so long (I used 2x professional Verticana lightning 35W LED, 2x Ikea Ledare 1800lm LED light bulbs and 3x Ikea Trådfri 800lm RGB Zigbee light bulbs)
 - I had to make gentle "sunrise" and "sunset" using zigbee dimmer on Verticana lights because Centaurea cyanus were getting heavy stress. Matthiola longipetala needed long "evening" using orange-red light from Trådfri light bulbs to smell strong like in the summer
-- all in all - flowers were nice. I seeded them in early November 2024 and they last until June 2025
-
-OBRAZEK
-
+- all in all - flowers were nice and healthy. It is definitely possible to grow summer plants in the winter, but only with professional lightning system. I seeded them in early November 2024 and they last until June 2025
+![o3.jpg](o3.jpg)
+![o4.jpg](o4.jpg)
 - usage of chatgpt was a disaster, I wasted a lot of time on debugging. It was a first time when I was dealing with zigbee library and low-level zigbee stack in general, chatgpt probably as well haha. As a result all of the suggestions were horrible and if I didn't use it, I would write the code faster.
 - next flowers I seeded in June and I used more Verticana lamps, window shades were also opening automatically during sunny days (the window in on south-east side), sensors were rewriten to python code on raspberry pi pico, data transmission over wifi, power supply is not battery anymore. WiFi transmission (using REST protocol to python service) is not as stable as Zigbee, but orders of magnitude simpler.
